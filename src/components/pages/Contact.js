@@ -1,53 +1,79 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import { blue } from '@mui/material/colors';
-import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
-import IconButton from '@mui/material/IconButton';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import GitHubIcon from '@mui/icons-material/GitHub';
-// import LightModeIcon from '@mui/icons-material/LightMode';
+import React, { useState } from 'react';
+import Icons from './Icons';
 
-// export default function Contact() {
-//   return (
-//     <div>
-//       <h3 class="text-center text-color">Contact Me</h3>
-//       <div class="row">
-//         <ul>
-//           <li><a href="tel:17202261469">Phone</a></li>
-//           <li><a href="mailto:naraamtm@yahoo.com">Email</a></li>
-//           <li><a href="https://github.com/Nara1469">GitHub</a></li>
-//           <li><a href="https://linkedin.com/in/naradavaasuren">LinkedIn</a></li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
+function Form() {
+  // Declaring state variables for Inputs using `useState`
+  const [userName, setUserName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { name, value } = e.target;
 
+    switch (name) {
+      case 'userName':
+        setUserName(value);
+        break;
+      case 'email':
+        setEmail(value);
+        break;
+      case 'message':
+        setMessage(value);
+        break;
+      default:
+        break;
+    }
 
-function HomeIcon(props: SvgIconProps) {
+    return;
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // Alert the user, clear the inputs
+    alert(`Hello ${userName}`);
+    setUserName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
-    <SvgIcon {...props}>
-      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-    </SvgIcon>
+    <div>
+      <h3 className="text-center text-color">Contact</h3>
+      <form className="form">
+        <input
+          value={userName}
+          name="userName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Name"
+        />
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Email"
+        />
+        <input
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Message"
+        />
+        <button type="button" onClick={() => handleFormSubmit}>
+          Submit
+        </button>
+        <p>
+          Message is required
+        </p>
+      </form>
+      <Icons />
+    </div>
   );
 }
 
-export default function SvgIconsColor() {
-  return (
-    <Box
-      sx={{
-        '& > :not(style)': {
-          m: 2,
-        },
-      }}
-    >
-      <IconButton><PhoneIphoneIcon sx={{ color: blue[500], fontSize: 30}} /></IconButton>
-      <IconButton><MailOutlineIcon sx={{ color: blue[500], fontSize: 30}} /></IconButton>
-      <IconButton><GitHubIcon sx={{ color: blue[500], fontSize: 30}} /></IconButton>
-      <IconButton><LinkedInIcon sx={{ color: blue[500], fontSize: 30}} /></IconButton>
-    </Box>
-  );
-}
+export default Form;

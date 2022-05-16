@@ -5,32 +5,34 @@ import Footer from './Footer';
 import About from './pages/About';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
-export default function PortfolioContainer() {
+export default function Portfolio() {
   const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
-    if (currentPage === 'About') {
-      return <About />;
+    switch (currentPage) {
+      case 'About':
+        return <About />;
+      case 'Project':
+        return <Project />;
+      case 'Contact':
+        return <Contact />;
+      case 'Resume':
+        return <Resume />;
+      default:
+        return <About />;
     }
-    if (currentPage === 'Project') {
-      return <Project />;
-    }
-    return <Contact />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    // <div className="main-container">
-      <div className="container">
-        <Header />
-        {/* // TODO: Add a comment describing what we are passing as props */}
-        <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-        {/* // TODO: Add a comment explaining what is happening on the following line */}
-        {renderPage()}
-        <Footer />
-      </div>
-    // </div>
-  ); 
+    <div className="container">
+      <Header />
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
+      <Footer />
+    </div>
+  );
 }
