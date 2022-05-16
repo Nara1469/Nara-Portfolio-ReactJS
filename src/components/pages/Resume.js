@@ -8,9 +8,9 @@ export default function Resume() {
       <h3 className="text-center text-color">Resume</h3>
       <p>Download my <a download href={ResumePDF}>Resume</a></p>
       <div className="container">
-        <div class="row row-cols-1 row-cols-sm- row-cols-md-2 row-cols-lg-2">
-          <div class="col">
-            <div class="card">
+        <div className="row row-cols-1 row-cols-sm- row-cols-md-2 row-cols-lg-2">
+          <div className="col">
+            <div className="card">
               <p>Front-end Proficiencies</p>
               <ul>
                 <li>HTML</li>
@@ -23,8 +23,8 @@ export default function Resume() {
               </ul>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
+          <div className="col">
+            <div className="card">
               <p>Back-end Proficiencies</p>
               <ul>
                 <li>APIs</li>

@@ -24,7 +24,7 @@
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "homepage": "https://nara1469.github.io/nara-portfolio",
+    "homepage": "https://nara1469.github.io/Nara-Portfolio-ReactJS/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
