@@ -1,25 +1,30 @@
 import React, { useState } from 'react';
 import Icons from './Icons';
+// Here we import a helper function that will check if the email is valid
+import { validateEmail } from '../../utils/helpers';
 
 function Form() {
   // Declaring state variables for Inputs using `useState`
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
 
-    switch (name) {
+    switch (inputType) {
       case 'userName':
-        setUserName(value);
+        setUserName(inputValue);
         break;
       case 'email':
-        setEmail(value);
+        setEmail(inputValue);
         break;
       case 'message':
-        setMessage(value);
+        setMessage(inputValue);
         break;
       default:
         break;
@@ -32,6 +37,18 @@ function Form() {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
+    if (!userName) {
+      setErrorMessage('Name is required');
+      return;
+    }
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
+      return;
+    }
+    if (!message) {
+      setErrorMessage(`Message is required`);
+      return;
+    }
     // Alert the user, clear the inputs
     alert(`Hello ${userName}`);
     setUserName('');
@@ -41,35 +58,40 @@ function Form() {
 
   return (
     <div>
-      <h3 className="text-center text-color">Contact</h3>
-      <form className="form">
+      <h3 className='text-center text-color'>Contact</h3>
+      <form className='form'>
         <input
           value={userName}
-          name="userName"
+          name='userName'
           onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
+          type='text'
+          placeholder='Name'
         />
         <input
           value={email}
-          name="email"
+          name='email'
           onChange={handleInputChange}
-          type="text"
-          placeholder="Email"
+          type='text'
+          placeholder='Email'
         />
         <input
           value={message}
-          name="message"
+          name='message'
           onChange={handleInputChange}
-          type="text"
-          placeholder="Message"
+          type='text'
+          placeholder='Message'
+          row='3'
         />
-        <button type="button" onClick={() => handleFormSubmit}>
-          Submit
-        </button>
-        <p>
-          Message is required
-        </p>
+        <div className='text-center'>
+          <button className='submit-button' onClick={handleFormSubmit}>
+            SUBMIT
+          </button>
+        </div>
+        {errorMessage && (
+          <div>
+            <p className='error-text'>{errorMessage}</p>
+          </div>
+        )}
       </form>
       <Icons />
     </div>

@@ -144,4 +144,4 @@ The following image shows the deployed webpage’s appearance: ![Portfolio](./as
 
 Some of my projects are displayed in Projects page: ![Projects](./assets/project.png)
 
-If you have any questions about the repo, open an issue or contact me directly at naraamtm@gmail.com. Here is a link to this application repo on [GitHub](https://nara1469.github.io/Nara-Portfolio-ReactJS/).
+If you have any questions about the repo, open an issue or contact me directly at naraamtm@gmail.com. Here is a link to this application repo on [GitHub](https://github.com/Nara1469/nara-portfolio-react).

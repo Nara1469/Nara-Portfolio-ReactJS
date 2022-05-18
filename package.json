@@ -26,7 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "https://nara1469.github.io/Nara-Portfolio-ReactJS/"  
+    "homepage": "https://github.com/Nara1469/nara-portfolio-react"  
   },
   "eslintConfig": {
     "extends": [
