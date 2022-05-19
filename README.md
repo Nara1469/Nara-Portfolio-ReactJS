@@ -1,6 +1,6 @@
 # 20 React: React Portfolio
 
-Nara's Portfolio Website using React.js
+Nara's Portfolio Website using the production build of React.js
 
 ## Table of Contents 
 
@@ -12,7 +12,7 @@ Nara's Portfolio Website using React.js
 
 ## Description
 
-I upgraded my portfolio webpage using my React skills. I built this site completely from scratch and deployed it to Heroku.
+I upgraded my portfolio webpage using my React skills. I built this site completely from scratch and deployed it to Heroku. Tnpm 
 
 ## User Story
 
