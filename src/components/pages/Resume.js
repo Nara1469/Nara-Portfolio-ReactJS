@@ -10,7 +10,7 @@ export default function Resume() {
       <div className="container">
         <div className="row row-cols-1 row-cols-sm- row-cols-md-2 row-cols-lg-2">
           <div className="col">
-            <div className="card">
+            <div className="card skill">
               <p>Front-end Proficiencies</p>
               <ul>
                 <li>HTML</li>
@@ -24,7 +24,7 @@ export default function Resume() {
             </div>
           </div>
           <div className="col">
-            <div className="card">
+            <div className="card skill">
               <p>Back-end Proficiencies</p>
               <ul>
                 <li>APIs</li>

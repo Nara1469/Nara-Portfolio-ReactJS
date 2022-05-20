@@ -74,13 +74,12 @@ function Form() {
           type='text'
           placeholder='Email'
         />
-        <input
+        <textarea
           value={message}
           name='message'
           onChange={handleInputChange}
           type='text'
           placeholder='Message'
-          row='3'
         />
         <div className='text-center'>
           <button className='submit-button' onClick={handleFormSubmit}>
