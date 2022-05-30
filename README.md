@@ -1,6 +1,6 @@
 # 20 React: React Portfolio
 
-Nara's Portfolio Website using the production build of React.js
+Nara's Portfolio Website built with ReactJS
 
 ## Table of Contents 
 
@@ -20,7 +20,7 @@ From the design side, here are a few challenges I decided to take:
 
 - Mobile-first design.
 - A color scheme generator [Coolors](https://coolors.co/) distinguishes from the default Bootstrap theme or unstyled HTML sites. 
-- The `Material UI` library works great with React.js. 
+- The `Material UI` library works great with React.js for Styling. 
 
 ## User Story
 
@@ -51,10 +51,7 @@ The Portfolio section includes titled images of five of the developer’s applic
 - A link to the deployed application
 - A link to the corresponding GitHub repository.
 
-The Contact section includes a contact form with fields for a name, an email address, and a message. When I move my cursor out of one of the form fields without entering text, I receive a notification that this field is required.
-Also, the email address field is validated by the application using a helper function in the back-end.
-
-**Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't save this information right now. 
+The Contact section includes a contact form with fields for a name, an email address, and a message. When I move my cursor out of one of the form fields without entering text, I receive a notification that this field is required. Also, the email address field is validated by the application using a helper function in the back-end.
 
 The Resume section includes a link to a downloadable resume and a list of the developer’s proficiencies.
 
