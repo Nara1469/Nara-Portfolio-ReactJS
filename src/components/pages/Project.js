@@ -22,8 +22,8 @@ export default function Project() {
         <div className="row row-cols-1 row-cols-sm- row-cols-md-2 row-cols-lg-2">
           <div className="col">
             <div className="card">
-              <a href="https://fsa-ratio.herokuapp.com/"><img className="img-class" src={ImageProject2} alt="Financial Ratio Analysis" /></a>
-              <a href="https://github.com/ebattani/Financial-Statement-Ratio-Analysis"><h4>Project: Financial Statement Ratio Analysis</h4></a>
+              <a href="https://financial-analysis-project-du.herokuapp.com/"><img className="img-class" src={ImageProject2} alt="Financial Statement Analysis" /></a>
+              <a href="https://github.com/Nara1469/financial-statement-analysis"><h4>Project: Financial Statement Ratio Analysis</h4></a>
               <h6>Full Stack - MVC</h6>
             </div>
           </div>
