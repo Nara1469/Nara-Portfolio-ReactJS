@@ -3,7 +3,6 @@ import ImageProject1 from "../images/mapped-event-tracker.png"
 import ImageProject2 from "../images/financial-statement-analysis.png"
 import ImageTechBlog from "../images/tech-blog.png"
 import ImageWeather from "../images/weather-dashboard.png"
-import ImageKeys from "../images/photo-keys.jpeg"
 
 export default function Project() {
   return (
@@ -43,9 +42,9 @@ export default function Project() {
           </div>
           <div className="col">
             <div className="card">
-              <a href="https://nara1469.github.io/MiniProject2/"><img className="img-class" src={ImageKeys} alt="CSS Code Snippets" /></a>
-              <a href="https://github.com/Nara1469/MiniProject2"><h4>CSS Snippets</h4></a>
-              <h6>HTML/CSS</h6>
+              <a href="https://fsa-ratio.herokuapp.com/"><img className="img-class" src={ImageProject2} alt="Financial Statement Ratio Analysis" /></a>
+              <a href="https://github.com/ebattani/Financial-Statement-Ratio-Analysis"><h4>Project: Financial Statement Ratio Analysis</h4></a>
+              <h6>MVC Paradigm Full Stack</h6>
             </div>
           </div>
         </div>

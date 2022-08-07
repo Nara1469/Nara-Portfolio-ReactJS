@@ -17,8 +17,8 @@ export default function Resume() {
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>jQuery</li>
-                <li>React</li>
                 <li>Bootstrap</li>
+                <li>React</li>
                 <li>Media and Responsive Design</li>
               </ul>
             </div>
@@ -27,12 +27,12 @@ export default function Resume() {
             <div className="card skill">
               <p>Back-end Proficiencies</p>
               <ul>
-                <li>APIs</li>
+                <li>AWS</li>
                 <li>Node</li>
                 <li>Express</li>
-                <li>MySQL Sequelize</li>
+                <li>MySQL and Sequelize</li>
                 <li>MongoDB and Mongoose</li>
-                <li>REST</li>
+                <li>REST APIs</li>
                 <li>GraphQL</li>
               </ul>
             </div>
