@@ -21,12 +21,12 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "https://github.com/Nara1469/nara-portfolio-react"
+    "homepage": "https://Nara1469.github.io/nara-portfolio-react"
   },
   "eslintConfig": {
     "extends": [
