@@ -13,13 +13,10 @@ export default function About() {
       <h3 className="text-center text-color">About Me</h3>
       <div className="container">
         <img className="profile-picture" src={ImageProfile} alt="Profile" />
-        <p>Full Stack Web Developer with a background of old-school software developer and life-long dedication to
-          learning. Effective at combining creativity and analytical problem solving to develop user-friendly
-          applications.</p>
-        <p>Being known among financial sectors for data analysis interest and attention to detail no matter the
-          complexity. Recently earned a certificate in Full Stack Web Development from a Coding Bootcamp of the
-          University of Denver. Strengths in teamwork, problem-solving, analytical thinking, and building projects to
-          satisfy user expectations.</p>
+        <p>Full Stack Web Developer with a background of software developer and life-long dedication to
+          learning. Earned a plethora of experience and knowledge in financial sector. Effective at combining creativity and analytical problem-solving skills to develop user-friendly applications.</p>
+        <p>Recently earned a certificate in Full Stack Web Development from a Coding Bootcamp of the
+          University of Denver. Result-oriented, self-starter whose drive and sense of urgency are tempered and disciplined by concern for the accuracy and quality of work.</p>
       </div>
       <Icons />
     </div>
