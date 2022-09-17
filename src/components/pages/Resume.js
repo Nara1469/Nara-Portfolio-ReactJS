@@ -27,13 +27,13 @@ export default function Resume() {
             <div className="card skill">
               <p>Back-end Proficiencies</p>
               <ul>
-                <li>AWS</li>
                 <li>Node</li>
                 <li>Express</li>
                 <li>MySQL and Sequelize</li>
                 <li>MongoDB and Mongoose</li>
                 <li>REST APIs</li>
                 <li>GraphQL</li>
+                <li>AWS</li>
               </ul>
             </div>
           </div>

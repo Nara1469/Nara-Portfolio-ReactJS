@@ -58,7 +58,7 @@ function Form() {
 
   return (
     <div>
-      <h3 className='text-center text-color'>Contact</h3>
+      <h3 className='text-center text-color'>Contact Me</h3>
       <form className='form'>
         <input
           value={userName}
