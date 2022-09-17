@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/nara-portfolio-react/static/css/main.6c4d2119.chunk.css",
+    "main.js": "/nara-portfolio-react/static/js/main.2a8adbdb.chunk.js",
+    "main.js.map": "/nara-portfolio-react/static/js/main.2a8adbdb.chunk.js.map",
+    "runtime-main.js": "/nara-portfolio-react/static/js/runtime-main.f14e7bec.js",
+    "runtime-main.js.map": "/nara-portfolio-react/static/js/runtime-main.f14e7bec.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/nara-portfolio-react/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.66316107.chunk.js": "/nara-portfolio-react/static/js/2.66316107.chunk.js",
+    "static/js/2.66316107.chunk.js.map": "/nara-portfolio-react/static/js/2.66316107.chunk.js.map",
+    "index.html": "/nara-portfolio-react/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/nara-portfolio-react/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.6c4d2119.chunk.css.map": "/nara-portfolio-react/static/css/main.6c4d2119.chunk.css.map",
+    "static/js/2.66316107.chunk.js.LICENSE.txt": "/nara-portfolio-react/static/js/2.66316107.chunk.js.LICENSE.txt",
+    "static/media/coding-languages.a62bdc7d.jpg": "/nara-portfolio-react/static/media/coding-languages.a62bdc7d.jpg",
+    "static/media/financial-statement-analysis.568c707e.png": "/nara-portfolio-react/static/media/financial-statement-analysis.568c707e.png",
+    "static/media/mapped-event-tracker.7bffb405.png": "/nara-portfolio-react/static/media/mapped-event-tracker.7bffb405.png",
+    "static/media/nararesume.27ae3607.pdf": "/nara-portfolio-react/static/media/nararesume.27ae3607.pdf",
+    "static/media/profile-picture.ad0983e7.jpeg": "/nara-portfolio-react/static/media/profile-picture.ad0983e7.jpeg",
+    "static/media/tech-blog.e28530ca.png": "/nara-portfolio-react/static/media/tech-blog.e28530ca.png",
+    "static/media/weather-dashboard.6b4a091c.png": "/nara-portfolio-react/static/media/weather-dashboard.6b4a091c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f14e7bec.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.66316107.chunk.js",
+    "static/css/main.6c4d2119.chunk.css",
+    "static/js/main.2a8adbdb.chunk.js"
+  ]
+}
